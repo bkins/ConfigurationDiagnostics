@@ -1,0 +1,61 @@
+Index: .idea/.idea.ConfigurationDiagnostics/.idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.ConfigurationDiagnostics/.idea/vcs.xml b/.idea/.idea.ConfigurationDiagnostics/.idea/vcs.xml
+new file mode 100644
+--- /dev/null	(date 1783881065525)
++++ b/.idea/.idea.ConfigurationDiagnostics/.idea/vcs.xml	(date 1783881065525)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="$PROJECT_DIR$" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/.idea.ConfigurationDiagnostics/.idea/.gitignore
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.ConfigurationDiagnostics/.idea/.gitignore b/.idea/.idea.ConfigurationDiagnostics/.idea/.gitignore
+new file mode 100644
+--- /dev/null	(date 1783881049947)
++++ b/.idea/.idea.ConfigurationDiagnostics/.idea/.gitignore	(date 1783881049947)
+@@ -0,0 +1,15 @@
++# Default ignored files
++/shelf/
++/workspace.xml
++# Rider ignored files
++/modules.xml
++/contentModel.xml
++/.idea.ConfigurationDiagnostics.iml
++/projectSettingsUpdater.xml
++# Editor-based HTTP Client requests
++/httpRequests/
++# Ignored default folder with query files
++/queries/
++# Datasource local storage ignored files
++/dataSources/
++/dataSources.local.xml
+Index: .idea/.idea.ConfigurationDiagnostics/.idea/indexLayout.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.ConfigurationDiagnostics/.idea/indexLayout.xml b/.idea/.idea.ConfigurationDiagnostics/.idea/indexLayout.xml
+new file mode 100644
+--- /dev/null	(date 1783881065491)
++++ b/.idea/.idea.ConfigurationDiagnostics/.idea/indexLayout.xml	(date 1783881065491)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="UserContentModel">
++    <attachedFolders />
++    <explicitIncludes />
++    <explicitExcludes />
++  </component>
++</project>
+\ No newline at end of file
