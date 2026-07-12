@@ -9,7 +9,7 @@
     <PropertyGroup>
         <!-- NuGet package metadata -->
         <PackageId>CognitivePlatform.Diagnostics</PackageId>
-        <Version>1.0.2</Version>
+        <Version>1.0.3</Version>
         <Authors>Ben</Authors>
         <Description>Configuration diagnostics dumper for Microsoft.Extensions.Configuration - tree/provider/override views with sensitive-value masking.</Description>
         <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
