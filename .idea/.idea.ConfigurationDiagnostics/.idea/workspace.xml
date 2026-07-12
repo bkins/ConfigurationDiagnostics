@@ -1,5 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakeProjectFlavorService">
+    <option name="flavorId" value="CMakePlainProjectFlavor" />
+  </component>
+  <component name="CMakeSettings">
+    <configurations />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2a16870e-4195-4ae2-999f-309dd9ef5143" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,15 +27,87 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
+  "lastFilter": {
+    "state": "OPEN",
+    "assignee": "bkins"
+  }
+}]]></component>
   <component name="GithubPullRequestsUISettings"><![CDATA[{
   "selectedUrlAndAccountId": {
     "url": "https://github.com/bkins/ConfigurationDiagnostics",
     "accountId": "f044ad74-80b8-4bac-8b23-e9c2cf03707e"
   }
 }]]></component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files (x86)/Nuget/Config/Microsoft.VisualStudio.FallbackLocation.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../../../../Program Files (x86)/Nuget/Config/Microsoft.VisualStudio.Offline.config" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Local/JetBrains/Shared/vAny/SourcesCache/17a3a8d481919bdc3f1630b5a7deadb2cd394fa12fff3312e6abe29bfc4/IConfiguration.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$USER_HOME$/AppData/Roaming/NuGet/NuGet.Config" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="McpProjectServerCommands">
     <commands />
     <urls />
+  </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
+  <component name="NextEditCompletionFeaturesState">
+    <decayedCancelled>
+      <entry key="MS100" value="1.48971014895687" />
+      <entry key="MS500" value="1.894168941068156" />
+      <entry key="S2" value="3.414719978097959" />
+      <entry key="S5" value="6.662539410056654" />
+      <entry key="S10" value="10.05043506466233" />
+      <entry key="S30" value="14.497086246389225" />
+      <entry key="S60" value="16.12323118243682" />
+      <entry key="M2" value="18.263598245579313" />
+      <entry key="M5" value="34.706682089308615" />
+      <entry key="M10" value="58.90420721829805" />
+      <entry key="M15" value="72.94947266610549" />
+      <entry key="M30" value="91.76858935500918" />
+      <entry key="H1" value="103.46027355323616" />
+      <entry key="H2" value="109.98176071573104" />
+      <entry key="H4" value="113.42647137888791" />
+      <entry key="D1" value="116.3952626463838" />
+      <entry key="W1" value="116.91338218283931" />
+    </decayedCancelled>
+    <decayedSelected>
+      <entry key="MS100" value="4.272841200902198E-39" />
+      <entry key="MS500" value="2.1190604725290428E-8" />
+      <entry key="S2" value="0.012065236454559142" />
+      <entry key="S5" value="0.17084974504712908" />
+      <entry key="S10" value="0.4133397453029762" />
+      <entry key="S30" value="0.744907572457994" />
+      <entry key="S60" value="0.8630802815833495" />
+      <entry key="M2" value="0.9290211416234558" />
+      <entry key="M5" value="0.9709798980606003" />
+      <entry key="M10" value="0.9853831224760248" />
+      <entry key="M15" value="0.9902315202025055" />
+      <entry key="M30" value="0.9951037735846978" />
+      <entry key="H1" value="0.9975488828045962" />
+      <entry key="H2" value="0.9987736894835562" />
+      <entry key="H4" value="0.9993866566467435" />
+      <entry key="D1" value="0.999897749973684" />
+      <entry key="W1" value="0.9999853922132372" />
+    </decayedSelected>
+    <decayedShown>
+      <entry key="MS100" value="1.445936793511299" />
+      <entry key="MS500" value="1.8806004993444432" />
+      <entry key="S2" value="3.363950442253342" />
+      <entry key="S5" value="6.74305900639883" />
+      <entry key="S10" value="10.387770117070593" />
+      <entry key="S30" value="15.204747102190163" />
+      <entry key="S60" value="16.9656919093079" />
+      <entry key="M2" value="19.181651965734613" />
+      <entry key="M5" value="35.672569238865755" />
+      <entry key="M10" value="59.8865923740248" />
+      <entry key="M15" value="73.93753432989345" />
+      <entry key="M30" value="92.76249436114819" />
+      <entry key="H1" value="104.45718785102497" />
+      <entry key="H2" value="110.98020731517022" />
+      <entry key="H4" value="114.42569190541731" />
+      <entry key="D1" value="117.39513233689273" />
+      <entry key="W1" value="117.91336355730803" />
+    </decayedShown>
   </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6,
@@ -71,7 +152,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1783881039852</updated>
-      <workItem from="1783881043326" duration="348000" />
+      <workItem from="1783881043326" duration="3551000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <option name="closed" value="true" />
@@ -95,6 +176,7 @@
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
