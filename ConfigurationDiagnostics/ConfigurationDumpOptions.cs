@@ -17,6 +17,7 @@ public sealed record ConfigurationDumpOptions
                                                                                             , "Credential"
                                                                                             , "AccessKey"
                                                                                             , "ClientSecret"
+                                                                                            , "API_KEY"
                                                                                       };
 
     /// <summary>Which strategy to run. Defaults to <see cref="ConfigurationDumpMode.Tree" />.</summary>

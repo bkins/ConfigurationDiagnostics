@@ -11,11 +11,12 @@ internal static class ConfigurationDumper
     private static readonly IReadOnlyDictionary<ConfigurationDumpMode, IConfigurationDumpStrategy> Strategies =
             new Dictionary<ConfigurationDumpMode, IConfigurationDumpStrategy>
             {
-                    [ConfigurationDumpMode.Tree]          = new TreeDumpStrategy(), [ConfigurationDumpMode.ByProvider] = new ProviderDumpStrategy()
-                  , [ConfigurationDumpMode.WithOverrides] = new OverridesDumpStrategy(), [ConfigurationDumpMode.Detailed] = new DetailedDumpStrategy(
-                        providerDumpStrategy: new ProviderDumpStrategy()
-                      , treeDumpStrategy: new TreeDumpStrategy()
-                      , overridesDumpStrategy: new OverridesDumpStrategy())
+                    [ConfigurationDumpMode.Tree]          = new TreeDumpStrategy()
+                  , [ConfigurationDumpMode.ByProvider]    = new ProviderDumpStrategy()
+                  , [ConfigurationDumpMode.WithOverrides] = new OverridesDumpStrategy()
+                  , [ConfigurationDumpMode.Detailed] = new DetailedDumpStrategy(providerDumpStrategy: new ProviderDumpStrategy()
+                                                                              , treeDumpStrategy: new TreeDumpStrategy()
+                                                                              , overridesDumpStrategy: new OverridesDumpStrategy())
             };
 
     public static void Dump( IConfiguration           configuration
