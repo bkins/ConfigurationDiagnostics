@@ -10,12 +10,13 @@ internal sealed class ProviderDumpStrategy : IConfigurationDumpStrategy
     {
         var configurationRoot = ConfigurationRootGuard.RequireRoot(configuration);
 
-        writer.WriteLine();
-        writer.WriteLine("Configuration Providers");
-        writer.WriteLine(new string(c: '-'
-                                  , count: 60));
+        ReportHeaderWriter.WriteHeading(writer
+                                      , "Configuration Providers");
 
-        foreach (var provider in configurationRoot.Providers) writer.WriteLine(provider);
+        foreach (var provider in configurationRoot.Providers)
+        {
+            writer.WriteLine($"\u2022 {ProviderDescriber.Describe(provider)}");
+        }
 
         writer.WriteLine();
     }

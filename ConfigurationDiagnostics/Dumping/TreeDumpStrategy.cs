@@ -8,14 +8,12 @@ internal sealed class TreeDumpStrategy : IConfigurationDumpStrategy
                     , TextWriter               writer
                     , ConfigurationDumpOptions options )
     {
-        writer.WriteLine();
-        writer.WriteLine("Effective Configuration");
-        writer.WriteLine(new string(c: '-'
-                                  , count: 60));
+        ReportHeaderWriter.WriteHeading(writer
+                                      , "Effective Configuration");
 
-        PrintSections(sections: configuration.GetChildren()
-                    , writer: writer
-                    , options: options
+        PrintSections(configuration.GetChildren()
+                    , writer
+                    , options
                     , depth: 0);
 
         writer.WriteLine();
@@ -27,6 +25,7 @@ internal sealed class TreeDumpStrategy : IConfigurationDumpStrategy
                                      , int                                depth )
     {
         if (depth > options.MaxDepth) return;
+        
 
         var orderedSections = options.SortAlphabetically
                                       ? sections.OrderBy(section => section.Key)
@@ -35,22 +34,21 @@ internal sealed class TreeDumpStrategy : IConfigurationDumpStrategy
         foreach (var section in orderedSections)
         {
             var childSections = section.GetChildren().ToList();
-            var indent = new string(c: ' '
-                                  , count: depth * 2);
+            var indent        = new string(' ', depth * 2);
 
             if (childSections.Count > 0)
             {
                 writer.WriteLine($"{indent}{section.Key}");
-                PrintSections(sections: childSections
-                            , writer: writer
-                            , options: options
-                            , depth: depth + 1);
+                PrintSections(childSections
+                            , writer
+                            , options
+                            , depth + 1);
             }
             else
             {
-                var displayValue = SensitiveValueMasker.Mask(keyPath: section.Path
-                                                           , value: section.Value
-                                                           , options: options);
+                var displayValue = SensitiveValueMasker.Mask(section.Path
+                                                           , section.Value
+                                                           , options);
                 writer.WriteLine($"{indent}{section.Key}: {displayValue}");
             }
         }

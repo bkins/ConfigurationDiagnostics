@@ -10,10 +10,8 @@ internal sealed class OverridesDumpStrategy : IConfigurationDumpStrategy
     {
         var configurationRoot = ConfigurationRootGuard.RequireRoot(configuration);
 
-        writer.WriteLine();
-        writer.WriteLine("Configuration Overrides");
-        writer.WriteLine(new string(c: '-'
-                                  , count: 60));
+        ReportHeaderWriter.WriteHeading(writer
+                                      , "Configuration Overrides");
 
         var configuredKeys = configurationRoot.AsEnumerable()
                                               .Where(entry => entry.Value != null)
@@ -25,10 +23,12 @@ internal sealed class OverridesDumpStrategy : IConfigurationDumpStrategy
                                   : configuredKeys;
 
         foreach (var key in orderedKeys)
-            WriteKeyOverrideHistory(configurationRoot: configurationRoot
-                                  , key: key
-                                  , writer: writer
-                                  , options: options);
+        {
+            WriteKeyOverrideHistory(configurationRoot
+                                  , key
+                                  , writer
+                                  , options);
+        }
     }
 
     private static void WriteKeyOverrideHistory( IConfigurationRoot       configurationRoot
@@ -42,21 +42,20 @@ internal sealed class OverridesDumpStrategy : IConfigurationDumpStrategy
 
         foreach (var provider in configurationRoot.Providers)
         {
-            if (!provider.TryGet(key: key
-                               , value: out var value)) continue;
-
+            if ( ! provider.TryGet(key, out var value)) continue;
+            
             finalValue = value;
 
-            var displayValue = SensitiveValueMasker.Mask(keyPath: key
-                                                       , value: value
-                                                       , options: options);
-            writer.WriteLine($"    {provider}");
+            var displayValue = SensitiveValueMasker.Mask(key
+                                                       , value
+                                                       , options);
+            writer.WriteLine($"    \u2022 {ProviderDescriber.Describe(provider)}");
             writer.WriteLine($"        {displayValue}");
         }
 
-        var finalDisplayValue = SensitiveValueMasker.Mask(keyPath: key
-                                                        , value: finalValue
-                                                        , options: options);
+        var finalDisplayValue = SensitiveValueMasker.Mask(key
+                                                        , finalValue
+                                                        , options);
         writer.WriteLine("    Final");
         writer.WriteLine($"        {finalDisplayValue}");
         writer.WriteLine();
